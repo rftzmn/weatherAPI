@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project 01</title>
+  </head>
+  <body>
+    <main>
+      <div class="flex justify-center">
+        <div class="flex gap-3 mt-3">
+          <input
+            name="userInput"
+            autocomplete="on"
+            id="userSearch"
+            type="text"
+            placeholder="Search City"
+            class="input input-bordered w-80"
+          />
+          <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="container mx-auto flex justify-center mt-5">
+        <div class="card w-[650px] bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title">
+              <span id="cityName">Dhaka</span>
+              <div class="badge badge-secondary" id="badgeId">NEW</div>
+            </h2>
+            <p><span id="temp"></span>°C</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
